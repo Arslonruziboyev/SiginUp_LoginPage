@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Register = () => {
   const [idx, idchange] = useState("");
@@ -8,12 +10,30 @@ const Register = () => {
   const [phonex, phonechange] = useState("");
   const [countryx, countrychange] = useState("");
   const [addressx, addresschange] = useState("");
-  const [genderx, genderchange] = useState("");
+  const [genderx, genderchange] = useState("femail");
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    let regobj ={idx, namex, passwordx, emailx, phonex, countryx, addressx, genderx};
-    console.log(regobj);
+    let regobj = {
+      idx,
+      namex,
+      passwordx,
+      emailx,
+      phonex,
+      countryx,
+      addressx,
+      genderx,
+    };
+    // console.log(regobj);
+    fetch("http://localhost:7000/user", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify(regobj),
+    }).then((res) => {
+        toast.success("Registred Successfully");
+      }).catch((err) => {
+        toast.error("Failed:" + err.message);
+      });
   };
   return (
     <div className="mt-5">
