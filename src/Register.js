@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import { useNavigate } from "react-router-dom";
+import {toast } from "react-toastify";
+;
 
 const Register = () => {
   const [idx, idchange] = useState("");
@@ -11,6 +12,8 @@ const Register = () => {
   const [countryx, countrychange] = useState("");
   const [addressx, addresschange] = useState("");
   const [genderx, genderchange] = useState("femail");
+
+  const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -25,12 +28,13 @@ const Register = () => {
       genderx,
     };
     // console.log(regobj);
-    fetch("http://localhost:7000/user", {
+    fetch("http://localhost:4000/user", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(regobj),
     }).then((res) => {
         toast.success("Registred Successfully");
+        navigate('/login')
       }).catch((err) => {
         toast.error("Failed:" + err.message);
       });
@@ -165,7 +169,7 @@ const Register = () => {
               <button type="submit" className="btn btn-primary">
                 Register
               </button>
-              <a className="btn btn-danger">Back</a>
+              <a href="htttp./" className="btn btn-danger">Back</a>
             </div>
           </div>
         </form>

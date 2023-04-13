@@ -1,6 +1,48 @@
 {
   "user": [
-   
+    {
+      "idx": "02arslsdsd",
+      "namex": "Arslon Ruzibsds",
+      "passwordx": "arslon19",
+      "emailx": "arsnruziboyev@gmail.com",
+      "phonex": "234234",
+      "countryx": "uzbek",
+      "addressx": "sddscsdccsdcs",
+      "genderx": "femail",
+      "id": 1
+    },
+    {
+      "idx": "02arslsdsd",
+      "namex": "Arslon Ruzibsds",
+      "passwordx": "arslon19",
+      "emailx": "arsnruzibocyev@gmail.com",
+      "phonex": "234234cv",
+      "countryx": "uzbek",
+      "addressx": "sddscscvcdccsdcs",
+      "genderx": "male",
+      "id": 2
+    },
+    {
+      "idx": "02arslon",
+      "namex": "Arslon Ruziboev",
+      "passwordx": "arsln1999",
+      "emailx": "arslonruziboyev@gmail.com",
+      "phonex": "8997023629",
+      "countryx": "uzbek",
+      "addressx": "Gulobod\nMuqimiy",
+      "genderx": "male",
+      "id": 3
+    },
+    {
+      "idx": "02arslon",
+      "namex": "Arslon Khushnudbek Ruziboev",
+      "passwordx": "arsln1999",
+      "emailx": "arslonruziboyev@gmail.com",
+      "phonex": "8997023629",
+      "countryx": "",
+      "addressx": "Gulobod\nMuqimiy",
+      "genderx": "male",
+      "id": 4
+    }
   ]
-  
 }
