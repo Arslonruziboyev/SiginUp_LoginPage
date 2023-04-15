@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const Login = () => {
   const [username, usernameupdate] = useState("");
@@ -7,7 +8,25 @@ const Login = () => {
 
   const ProceedLogin = (e) => {
     e.preventDefault();
+    if(validate()){
+        console.log('pocceed')
+    }
   };
+
+  const validate = ()=>{
+    let result = true;
+    if(username === '' || username === null){
+        result=false;
+        toast.warning('Please Enter Username');
+    }
+    if(password === '' || password === null){
+        result=false;
+        toast.warning('Please Enter Password');
+    }
+
+    return result;
+
+  }
   return (
     <div className="row">
       <div className="offset-lg-3 col-lg-6">
@@ -32,6 +51,7 @@ const Login = () => {
                   Password <span className="errmsg">*</span>
                 </label>
                 <input
+                type="password"
                   value={password}
                   onChange={(e) => passwordupdate(e.target.value)}
                   className="form-control"
