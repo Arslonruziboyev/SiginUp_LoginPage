@@ -43,6 +43,28 @@
       "addressx": "Gulobod\nMuqimiy",
       "genderx": "male",
       "id": 4
+    },
+    {
+      "idx": "02arslon",
+      "namex": "",
+      "passwordx": "arsln1999",
+      "emailx": "",
+      "phonex": "",
+      "countryx": "",
+      "addressx": "",
+      "genderx": "femail",
+      "id": 5
+    },
+    {
+      "idx": "",
+      "namex": "fefweffw",
+      "passwordx": "arsln1999",
+      "emailx": "",
+      "phonex": "",
+      "countryx": "",
+      "addressx": "",
+      "genderx": "femail",
+      "id": 6
     }
   ]
 }

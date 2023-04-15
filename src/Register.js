@@ -14,6 +14,39 @@ const Register = () => {
   const [genderx, genderchange] = useState("femail");
 
   const navigate = useNavigate();
+  const isValidate= ()=>{
+    let isproceed = true;
+    const regex = "([+]?[\s0-9]+)?(\d{3}|[(]?[0-9]+[)])?([-]?[\s]?[0-9])+$/i";
+    let errormessage = 'Please enter value in '
+    if(idx==null || idx==''){
+      isproceed=false;
+      errormessage+= 'Username'
+    }
+    if(passwordx==null || passwordx==''){
+      isproceed=false;
+      errormessage+= 'Password'
+    }
+    if(namex==null || namex==''){
+      isproceed=false;
+      errormessage+= 'Full Name'
+    }
+    if(emailx==null || emailx==''){
+      isproceed=false;
+      errormessage+= 'Email'
+    }
+    if(phonex==null || phonex=='' || regex){
+      isproceed=false;
+      errormessage+= 'Phone Number'
+    }
+
+    if(!isproceed){
+      toast.warning(errormessage)
+    }
+
+
+    return isproceed
+  }
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -28,6 +61,7 @@ const Register = () => {
       genderx,
     };
     // console.log(regobj);
+  if(isValidate()){
     fetch("http://localhost:4000/user", {
       method: "POST",
       headers: { "content-type": "application/json" },
@@ -38,6 +72,7 @@ const Register = () => {
       }).catch((err) => {
         toast.error("Failed:" + err.message);
       });
+  }
   };
   return (
     <div className="mt-5">
@@ -55,6 +90,7 @@ const Register = () => {
                       User Name <span className="errmsg">*</span>
                     </label>
                     <input
+                    
                       value={idx}
                       onChange={(e) => idchange(e.target.value)}
                       className="form-control"
