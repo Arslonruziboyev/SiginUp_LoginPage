@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import {toast } from "react-toastify";
-;
-
+import { toast } from "react-toastify";
 const Register = () => {
   const [idx, idchange] = useState("");
   const [namex, namechange] = useState("");
@@ -14,38 +12,37 @@ const Register = () => {
   const [genderx, genderchange] = useState("femail");
 
   const navigate = useNavigate();
-  const isValidate= ()=>{
+  const isValidate = () => {
     let isproceed = true;
-    const regex = "([+]?[\s0-9]+)?(\d{3}|[(]?[0-9]+[)])?([-]?[\s]?[0-9])+$/i";
-    let errormessage = 'Please enter value in '
-    if(idx==null || idx==''){
-      isproceed=false;
-      errormessage+= 'Username'
+
+    let errormessage = "Please enter value in ";
+    if (idx === null || idx === "") {
+      isproceed = false;
+      errormessage += "Username";
     }
-    if(passwordx==null || passwordx==''){
-      isproceed=false;
-      errormessage+= 'Password'
+    if (passwordx === null || passwordx === "") {
+      isproceed = false;
+      errormessage += "Password";
     }
-    if(namex==null || namex==''){
-      isproceed=false;
-      errormessage+= 'Full Name'
+    if (namex === null || namex === "") {
+      isproceed = false;
+      errormessage += "Full Name";
     }
-    if(emailx==null || emailx==''){
-      isproceed=false;
-      errormessage+= 'Email'
+    if (emailx === null || emailx === "") {
+      isproceed = false;
+      errormessage += "Email";
     }
-    if(phonex==null || phonex=='' || regex){
-      isproceed=false;
-      errormessage+= 'Phone Number'
+    if (phonex === null || phonex === "") {
+      isproceed = false;
+      errormessage += "Phone Number";
     }
 
-    if(!isproceed){
-      toast.warning(errormessage)
+    if (!isproceed) {
+      toast.warning(errormessage);
     }
 
-
-    return isproceed
-  }
+    return isproceed;
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -61,18 +58,20 @@ const Register = () => {
       genderx,
     };
     // console.log(regobj);
-  if(isValidate()){
-    fetch("http://localhost:4000/user", {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify(regobj),
-    }).then((res) => {
-        toast.success("Registred Successfully");
-        navigate('/login')
-      }).catch((err) => {
-        toast.error("Failed:" + err.message);
-      });
-  }
+    if (isValidate()) {
+      fetch("http://localhost:4000/user", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify(regobj),
+      })
+        .then((res) => {
+          toast.success("Registred Successfully");
+          navigate("/login");
+        })
+        .catch((err) => {
+          toast.error("Failed:" + err.message);
+        });
+    }
   };
   return (
     <div className="mt-5">
@@ -90,7 +89,6 @@ const Register = () => {
                       User Name <span className="errmsg">*</span>
                     </label>
                     <input
-                    
                       value={idx}
                       onChange={(e) => idchange(e.target.value)}
                       className="form-control"
@@ -205,7 +203,9 @@ const Register = () => {
               <button type="submit" className="btn btn-primary">
                 Register
               </button>
-              <a href="htttp./" className="btn btn-danger">Back</a>
+              <a href="htttp./" className="btn btn-danger">
+                Back
+              </a>
             </div>
           </div>
         </form>
