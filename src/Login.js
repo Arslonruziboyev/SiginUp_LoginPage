@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
@@ -7,6 +7,10 @@ const Login = () => {
   const [password, passwordupdate] = useState("");
 
   const usenaviggate = useNavigate();
+
+  useEffect(()=>{
+    sessionStorage.clear();
+  }, [])
 
   const ProceedLogin = (e) => {
     e.preventDefault();
@@ -23,6 +27,7 @@ const Login = () => {
           else{
             if(resp.password===password){
               toast.success("Successfully registred")
+              sessionStorage.setItem('username', username)
               usenaviggate("/")
             }else{
               toast.error("Please enter valaid credantials")

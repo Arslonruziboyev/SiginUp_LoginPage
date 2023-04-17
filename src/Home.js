@@ -1,6 +1,15 @@
-import { Link } from "react-router-dom"
+import { useEffect } from "react"
+import { Link, useNavigate } from "react-router-dom"
 
 const Home = () =>{
+    const usenavigatee = useNavigate();
+    useEffect(()=>{
+        let username = sessionStorage.getItem('username');
+
+        if(username === '' || username === null){
+            usenavigatee('/login')
+        }
+    }, [])
     return (
         <div>
            <div className="header">

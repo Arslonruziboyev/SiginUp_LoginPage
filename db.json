@@ -9,6 +9,28 @@
       "country": "india",
       "address": "Gulobod\nMuqimiy",
       "gender": "female"
+    },
+    {
+      "idx": "02arslonn",
+      "namex": "Arslon Khushnudbek Ruziboev",
+      "passwordx": "arslon1999",
+      "emailx": "arslonruziboyev@gmail.com",
+      "phonex": "08997023629",
+      "countryx": "",
+      "addressx": "Gulobod\nMuqimiy",
+      "genderx": "male",
+      "id": "PIMt2gy"
+    },
+    {
+      "idx": "admin",
+      "namex": "Arslon Khushnudbek Ruziboev",
+      "passwordx": "admin",
+      "emailx": "arslonruziboyev@gmail.com",
+      "phonex": "8997023629",
+      "countryx": "uzbek",
+      "addressx": "Gulobod\nMuqimiy",
+      "genderx": "femail",
+      "id": "MqqA9Jo"
     }
   ]
 }
