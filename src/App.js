@@ -5,7 +5,7 @@ import Home from './Home';
 import Login from './Login';
 import Register from './Register';
 import { ToastContainer } from 'react-toastify';
-import Doctor from '../Doctor';
+import Doctor from './Doctor';
 
 function App() {
   return (
