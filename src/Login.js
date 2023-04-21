@@ -28,7 +28,12 @@ const Login = () => {
             if(resp.password===password){
               toast.success("Successfully registred")
               sessionStorage.setItem('username', username)
-              usenaviggate("/")
+              if(resp.goalEntry === 'user'){
+                usenaviggate("/")
+              }else{
+                usenaviggate("/doctor")
+              }
+              
             }else{
               toast.error("Please enter valaid credantials")
             }

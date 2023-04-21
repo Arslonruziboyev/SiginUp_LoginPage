@@ -12,6 +12,7 @@ const Register = () => {
     const [country, countrychange] = useState("india");
     const [address, addresschange] = useState("");
     const [gender, genderchange] = useState("female");
+    const [goalEntry, goalentrychange] = useState("user");
 
     const navigate = useNavigate();
 
@@ -51,7 +52,7 @@ const Register = () => {
 
     const handlesubmit = (e) => {
             e.preventDefault();
-            let regobj = { id, name, password, email, phone, country, address, gender };
+            let regobj = { id, name, password, email, phone, country, address, gender, goalEntry };
             if (IsValidate()) {
             //console.log(regobj);
             fetch("http://localhost:4000/user", {
@@ -131,6 +132,16 @@ const Register = () => {
                                         <label>Male</label>
                                         <input type="radio" checked={gender === 'female'} onChange={e => genderchange(e.target.value)} name="gender" value="female" className="app-check"></input>
                                         <label>Female</label>
+                                    </div>
+                                </div>
+                                <div className="col-lg-6">
+                                    <div className="form-group">
+                                        <label>goals of entry</label>
+                                        <br></br>
+                                        <input type="radio" checked={goalEntry === 'user'} onChange={e => goalentrychange(e.target.value)} name="goalEntry" value="user" className="app-check"></input>
+                                        <label>User</label>
+                                        <input type="radio" checked={goalEntry === 'doctor'} onChange={e => goalentrychange(e.target.value)} name="goalEntry" value="doctor" className="app-check"></input>
+                                        <label>Doctor</label>
                                     </div>
                                 </div>
 
