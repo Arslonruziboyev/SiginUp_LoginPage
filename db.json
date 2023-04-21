@@ -1,24 +1,5 @@
 {
   "user": [
-    {
-      "id": "02arslon",
-      "name": "Arslon Khushnudbek Ruziboev",
-      "password": "arsln1999",
-      "email": "arslonruziboyev@gmail.com",
-      "phone": "08997023629",
-      "country": "india",
-      "address": "Gulobod\nMuqimiy",
-      "gender": "male"
-    },
-    {
-      "id": "admin",
-      "name": "Arslon Khushnudbek Ruziboev",
-      "password": "admin",
-      "email": "arslonruziboyev@gmail.com",
-      "phone": "08997023629",
-      "country": "india",
-      "address": "Gulobod\nMuqimiy",
-      "gender": "male"
-    }
+   
   ]
 }
