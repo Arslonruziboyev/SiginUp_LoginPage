@@ -31,6 +31,17 @@
       "address": "Gulobod\nMuqimiy",
       "gender": "male",
       "goalEntry": "doctor"
+    },
+    {
+      "id": "1111",
+      "name": "Arslon Khushnudbek Ruziboev",
+      "password": "1111",
+      "email": "arslonruziboyev@gmail.com",
+      "phone": "08997023629",
+      "country": "india",
+      "address": "Gulobod\nMuqimiy",
+      "gender": "male",
+      "goalEntry": "doctor"
     }
   ]
 }

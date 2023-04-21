@@ -13,10 +13,10 @@ const Doctor = () =>{
     return (
         <div>
            <div className="header">
-            <Link to={'/'}>Home</Link>
+            <Link to={'/'}>doctor</Link>
             <Link to={'/login'}>Logout</Link>
            </div>
-           <h1 className="text-center">Welcome to Arslon Ruziboev</h1>
+           <h1 className="text-center">Welcome to Doctor Page</h1>
         </div>
     )
 }
