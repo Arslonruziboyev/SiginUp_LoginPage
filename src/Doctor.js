@@ -5,8 +5,9 @@ const Doctor = () =>{
     const usenavigatee = useNavigate();
     useEffect(()=>{
         let username = sessionStorage.getItem('username');
+        let goalEntry = sessionStorage.getItem('goalEntry');
 
-        if(username === '' || username === null){
+        if(( username === '' || username === null ) || goalEntry === 'docotor'){
             usenavigatee('/login')
         }
     }, [])
