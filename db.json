@@ -1,46 +1,14 @@
 {
   "user": [
     {
-      "id": "02arslon",
-      "name": "arslon",
-      "password": "arslon",
-      "email": "arslonruziboyev@gmail.com",
-      "phone": "08997023629",
-      "country": "india",
-      "address": "Gulobod\nMuqimiy",
-      "gender": "male"
-    },
-    {
-      "id": "user",
-      "name": "arslon",
+      "id": "user22",
+      "name": "Arslon s",
       "password": "user",
       "email": "arslonruziboyev@gmail.com",
       "phone": "08997023629",
-      "country": "india",
+      "country": "usa",
       "address": "Gulobod\nMuqimiy",
-      "gender": "male",
-      "goalEntry": "user"
-    },
-    {
-      "id": "user1",
-      "name": "Arslon Khushnudbek Ruziboev",
-      "password": "user1",
-      "email": "arslonruziboyev@gmail.com",
-      "phone": "08997023629",
-      "country": "india",
-      "address": "Gulobod\nMuqimiy",
-      "gender": "male",
-      "goalEntry": "doctor"
-    },
-    {
-      "id": "1111",
-      "name": "Arslon Khushnudbek Ruziboev",
-      "password": "1111",
-      "email": "arslonruziboyev@gmail.com",
-      "phone": "08997023629",
-      "country": "india",
-      "address": "Gulobod\nMuqimiy",
-      "gender": "male",
+      "gender": "female",
       "goalEntry": "doctor"
     }
   ]
