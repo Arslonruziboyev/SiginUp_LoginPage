@@ -57,3 +57,6 @@ app-check{
     transform: rotate(360deg);
   }
 }
+.mr2{
+  margin-right: 6px;
+}

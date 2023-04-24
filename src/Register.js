@@ -129,7 +129,7 @@ const Register = () => {
                                         <label>Gender</label>
                                         <br></br>
                                         <input type="radio" checked={gender === 'male'} onChange={e => genderchange(e.target.value)} name="gender" value="male" className="app-check"></input>
-                                        <label>Male</label>
+                                        <label className="mr2">Male</label>
                                         <input type="radio" checked={gender === 'female'} onChange={e => genderchange(e.target.value)} name="gender" value="female" className="app-check"></input>
                                         <label>Female</label>
                                     </div>
@@ -139,7 +139,7 @@ const Register = () => {
                                         <label>goals of entry</label>
                                         <br></br>
                                         <input type="radio" checked={goalEntry === 'user'} onChange={e => goalentrychange(e.target.value)} name="goalEntry" value="user" className="app-check"></input>
-                                        <label>User</label>
+                                        <label className="mr2">User</label>
                                         <input type="radio" checked={goalEntry === 'doctor'} onChange={e => goalentrychange(e.target.value)} name="goalEntry" value="doctor" className="app-check"></input>
                                         <label>Doctor</label>
                                     </div>
@@ -148,9 +148,9 @@ const Register = () => {
                             </div>
 
                         </div>
-                        <div className="card-footer">
+                        <div className="card-footer ">
                             <button type="submit" className="btn btn-primary">Register</button> 
-                            <Link to={'/login'} className="btn btn-danger">Close</Link>
+                            <Link to={'/login'} className="btn btn-danger ml-2">Close</Link>
                         </div>
                     </div>
                 </form>
