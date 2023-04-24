@@ -1,26 +1,5 @@
 {
   "user": [
-    {
-      "id": "user",
-      "name": "Arslon s",
-      "password": "user",
-      "email": "arslonruziboyev@gmail.com",
-      "phone": "",
-      "country": "usa",
-      "address": "Gulobod\nMuqimiy",
-      "gender": "female",
-      "goalEntry": "doctor"
-    },
-    {
-      "id": "admin",
-      "name": "Arslon s",
-      "password": "admin",
-      "email": "arslonruziboyev@gmail.com",
-      "phone": "",
-      "country": "usa",
-      "address": "Gulobod\nMuqimiy",
-      "gender": "female",
-      "goalEntry": "user"
-    }
+    
   ]
 }
