@@ -16,7 +16,7 @@ const Home = () =>{
             <Link to={'/'}>Home</Link>
             <Link to={'/login'}>Logout</Link>
            </div>
-           <h1 className="text-center">Welcome to Arslon Ruziboev</h1>
+           <h1 className="text-center">Welcome to User Page</h1>
         </div>
     )
 }

@@ -1,15 +1,15 @@
 {
   "user": [
     {
-      "id": "user22",
+      "id": "02arslon",
       "name": "Arslon s",
-      "password": "user",
+      "password": "arslon",
       "email": "arslonruziboyev@gmail.com",
-      "phone": "08997023629",
+      "phone": "",
       "country": "usa",
       "address": "Gulobod\nMuqimiy",
       "gender": "female",
-      "goalEntry": "doctor"
+      "goalEntry": "user"
     }
   ]
 }
